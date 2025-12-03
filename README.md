@@ -14,10 +14,10 @@ Le site doit contenir au minimum :
 Le projet se fait en équipe de 4, chacun avec un rôle précis.
 
 Les différents rôles sont :
--Chef d’équipe ;
--Développeur principal ;
--Développeur Créa ;
--L’hébergeur.
+Chef d’équipe ;
+Développeur principal ;
+Développeur Créa ;
+L’hébergeur.
 
 1.1. Chef d’équipe. Il doit :
 - [ ] Initialiser le repo git, le partager avec ses camarades.
