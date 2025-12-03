@@ -1,0 +1,144 @@
+/* ======================================= */
+/* Styles Généraux et Classes demandées    */
+/* ======================================= */
+
+:root {
+    --couleur-primaire: #4CAF50; /* Vert */
+    --couleur-secondaire: #388E3C; /* Vert foncé */
+    --couleur-texte: #333;
+    --couleur-fond: #f4f4f4;
+}
+
+/* CLASSE 1 : Style général du corps */
+.fond-principal {
+    font-family: Arial, sans-serif;
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* CLASSE 2 : Style de l'en-tête */
+.entete-page {
+    background-color: var(--couleur-primaire);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CLASSE 3 : Style du contenu principal */
+.contenu-principal {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CLASSE 4 : Style des boutons/liens d'action */
+.bouton-action {
+    display: inline-block;
+    background-color: var(--couleur-secondaire);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.bouton-action:hover {
+    background-color: var(--couleur-primaire);
+}
+
+
+/* ======================================= */
+/* Styles Supplémentaires                  */
+/* ======================================= */
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Formulaires */
+.module-formulaire {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.groupe-champ {
+    margin-bottom: 15px;
+}
+
+.groupe-champ label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.groupe-champ input[type="text"], 
+.groupe-champ input[type="file"],
+.groupe-champ select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* S'assure que le padding n'augmente pas la largeur totale */
+}
+
+/* Messages d'état */
+.message-succes {
+    background-color: #e6ffe6;
+    color: #008000;
+    border: 1px solid #008000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.message-erreur {
+    background-color: #ffe6e6;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Pied de page */
+.pied-de-page {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
