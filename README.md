@@ -35,8 +35,11 @@ site) et un formulaire de vote.
 
 Classes CSS à utiliser pour Dev web et Créa
 .hero-motte : section d’introduction de la page d’accueil, avec une grande image et un titre.
+
 .card-oiseau : carte visuelle utilisée pour afficher les photos d’oiseaux du concours.
+
 .formulaire-photo : mise en forme du formulaire permettant d’envoyer une photo.
+
 .btn-principal : style du bouton principal du site (vote, envoi, action importante).
 
 1.3. Développeur Créa. Il doit :
