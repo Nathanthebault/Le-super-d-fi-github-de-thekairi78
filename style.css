@@ -1,5 +1,5 @@
 /* ======================================= */
-/* Styles Généraux et Classes demandées    */
+/* Variables et Classes Principales        */
 /* ======================================= */
 
 :root {
@@ -58,33 +58,19 @@
 
 
 /* ======================================= */
-/* Styles Supplémentaires                  */
+/* Styles Supplémentaires (Formulaires, Messages) */
 /* ======================================= */
 
 /* Navigation */
 nav {
-    background-color: #333;
-    padding: 10px 0;
+    background-color: transparent;
+    padding: 0;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li a {
+.entete-page nav a {
     color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color: #555;
+    text-decoration: underline;
 }
 
 /* Formulaires */
@@ -107,12 +93,13 @@ nav ul li a:hover {
 
 .groupe-champ input[type="text"], 
 .groupe-champ input[type="file"],
+.groupe-champ input[type="email"],
 .groupe-champ select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* S'assure que le padding n'augmente pas la largeur totale */
+    box-sizing: border-box; 
 }
 
 /* Messages d'état */
@@ -141,4 +128,51 @@ nav ul li a:hover {
     background-color: #333;
     color: white;
     margin-top: 20px;
+}
+
+/* ======================================= */
+/* Styles Spécifiques au Concours et au Bonus */
+/* ======================================= */
+
+/* Formulaire de Vote */
+.photo-list-vote { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+.vote-item { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    text-align: center; 
+    width: 250px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.vote-item img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+    margin-bottom: 10px;
+}
+
+/* Bonus : Aperçu Interactif */
+#photo-viewer {
+    width: 400px;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid var(--couleur-secondaire);
+    padding: 15px;
+    border-radius: 8px;
+}
+#current-photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+#navigation button {
+    padding: 5px 15px;
+    font-size: 1.2em;
 }
