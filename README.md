@@ -33,7 +33,13 @@ cheffe d’équipe.
 - [ ] Créer un formulaire pour soumettre les photos (qui sont enregistrées sur le
 site) et un formulaire de vote.
 
+1.3. Développeur Créa. Il doit :
+- [ ] Créer un CSS définissant les classes dont les noms sont donnés par le/la
+cheffe d’équipe.
+- [ ] Trouver des photos d’oiseaux pour illustrer.
+
 Classes CSS à utiliser pour Dev web et Créa
+
 .hero-motte : section d’introduction de la page d’accueil, avec une grande image et un titre.
 
 .card-oiseau : carte visuelle utilisée pour afficher les photos d’oiseaux du concours.
@@ -41,11 +47,6 @@ Classes CSS à utiliser pour Dev web et Créa
 .formulaire-photo : mise en forme du formulaire permettant d’envoyer une photo.
 
 .btn-principal : style du bouton principal du site (vote, envoi, action importante).
-
-1.3. Développeur Créa. Il doit :
-- [ ] Créer un CSS définissant les classes dont les noms sont donnés par le/la
-cheffe d’équipe.
-- [ ] Trouver des photos d’oiseaux pour illustrer.
 
 1.4. Hébergeur. Il doit :
 - [ ] Héberger le site en local pour le tester.
