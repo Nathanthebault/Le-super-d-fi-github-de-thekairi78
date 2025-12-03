@@ -49,14 +49,3 @@ cheffe d’équipe.
 - [ ] Créer la base de donnée.
 - [ ] Si le temps le permet, héberger le site sur un vrai hébergeur. (Votre alwaysdata par exemple, et dans ce cas il faut aussi créer la base de données sur
 alwaysdata.
-
-Structure du projet
-/
-├── index.html
-├── concours.php
-├── css/
-│   └── style.css
-├── uploads/
-├── inc/
-│   └── db.php
-└── README.md
