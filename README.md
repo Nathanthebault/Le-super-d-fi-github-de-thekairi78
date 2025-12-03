@@ -14,10 +14,10 @@ Le site doit contenir au minimum :
 Le projet se fait en équipe de 4, chacun avec un rôle précis.
 
 Les différents rôles sont :
--Chef d’équipe ;
--Développeur principal ;
--Développeur Créa ;
--L’hébergeur.
+Chef d’équipe ;
+Développeur principal ;
+Développeur Créa ;
+L’hébergeur.
 
 1.1. Chef d’équipe. Il doit :
 - [ ] Initialiser le repo git, le partager avec ses camarades.
@@ -38,7 +38,17 @@ site) et un formulaire de vote.
 cheffe d’équipe.
 - [ ] Trouver des photos d’oiseaux pour illustrer.
 
-1.4. Hébergeur. Il/elle doit :
+Classes CSS à utiliser pour Dev web et Créa
+
+.hero-motte : section d’introduction de la page d’accueil, avec une grande image et un titre.
+
+.card-oiseau : carte visuelle utilisée pour afficher les photos d’oiseaux du concours.
+
+.formulaire-photo : mise en forme du formulaire permettant d’envoyer une photo.
+
+.btn-principal : style du bouton principal du site (vote, envoi, action importante).
+
+1.4. Hébergeur. Il doit :
 - [ ] Héberger le site en local pour le tester.
 - [ ] Créer la base de donnée.
 - [ ] Si le temps le permet, héberger le site sur un vrai hébergeur. (Votre alwaysdata par exemple, et dans ce cas il faut aussi créer la base de données sur
