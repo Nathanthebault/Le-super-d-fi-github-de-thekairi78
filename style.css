@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* PC */
+@media (min-width: 601px) {
+
+    .hero-motte {
+        background-color: #e0e0e0;
+        padding: 50px;
+        text-align: left;
+    }
+
+    .card-oiseau {
+        border: 2px solid #333;
+        width: 300px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .formulaire-photo {
+        background-color: #d4edda;
+        padding: 30px;
+        max-width: 500px;
+    }
+
+    .btn-principal {
+        background-color: #0056b3;
+        color: white;
+        padding: 10px 30px;
+        width: auto;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .hero-motte {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-oiseau {
+        border: 1px solid #ccc;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .formulaire-photo {
+        background-color: #fff3cd;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-principal {
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+    }
+}
