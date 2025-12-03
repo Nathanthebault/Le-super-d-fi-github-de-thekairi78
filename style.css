@@ -1,5 +1,5 @@
 /* ======================================= */
-/* Variables et Classes Principales        */
+/* Styles Généraux et Classes demandées    */
 /* ======================================= */
 
 :root {
@@ -9,8 +9,7 @@
     --couleur-fond: #f4f4f4;
 }
 
-/* CLASSE 1 : Style général du corps */
-.fond-principal {
+body {
     font-family: Arial, sans-serif;
     background-color: var(--couleur-fond);
     color: var(--couleur-texte);
@@ -19,66 +18,53 @@
     line-height: 1.6;
 }
 
-/* CLASSE 2 : Style de l'en-tête */
-.entete-page {
-    background-color: var(--couleur-primaire);
+/* CLASSE 1 : Section d’introduction de la page d’accueil */
+.hero-motte {
+    background-image: url('placeholder-hero.jpg'); /* REMPLACEZ PAR VOTRE IMAGE */
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 20px;
+    padding: 80px 20px;
     text-align: center;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* CLASSE 3 : Style du contenu principal */
-.contenu-principal {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
+.hero-motte h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* CLASSE 2 : Carte visuelle pour afficher les photos */
+.card-oiseau {
     background: white;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* CLASSE 4 : Style des boutons/liens d'action */
-.bouton-action {
-    display: inline-block;
-    background-color: var(--couleur-secondaire);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
-}
-
-.bouton-action:hover {
-    background-color: var(--couleur-primaire);
-}
-
-
-/* ======================================= */
-/* Styles Supplémentaires (Formulaires, Messages) */
-/* ======================================= */
-
-/* Navigation */
-nav {
-    background-color: transparent;
-    padding: 0;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     text-align: center;
 }
 
-.entete-page nav a {
-    color: white;
-    text-decoration: underline;
+.card-oiseau img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
-/* Formulaires */
-.module-formulaire {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+
+/* CLASSE 3 : Mise en forme du formulaire */
+.formulaire-photo {
+    padding: 30px;
+    border: 1px solid var(--couleur-primaire);
+    border-radius: 8px;
+    background-color: #ffffff;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .groupe-champ {
@@ -93,13 +79,70 @@ nav {
 
 .groupe-champ input[type="text"], 
 .groupe-champ input[type="file"],
-.groupe-champ input[type="email"],
 .groupe-champ select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+/* CLASSE 4 : Style du bouton principal du site */
+.btn-principal {
+    display: inline-block;
+    background-color: var(--couleur-secondaire);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn-principal:hover {
+    background-color: var(--couleur-primaire);
+    transform: translateY(-1px);
+}
+
+
+/* ======================================= */
+/* Styles Supplémentaires                  */
+/* ======================================= */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
 
 /* Messages d'état */
@@ -128,51 +171,4 @@ nav {
     background-color: #333;
     color: white;
     margin-top: 20px;
-}
-
-/* ======================================= */
-/* Styles Spécifiques au Concours et au Bonus */
-/* ======================================= */
-
-/* Formulaire de Vote */
-.photo-list-vote { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center;
-}
-.vote-item { 
-    border: 1px solid #ccc; 
-    padding: 10px; 
-    text-align: center; 
-    width: 250px; 
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-.vote-item img { 
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 4px; 
-    margin-bottom: 10px;
-}
-
-/* Bonus : Aperçu Interactif */
-#photo-viewer {
-    width: 400px;
-    margin: 30px auto;
-    text-align: center;
-    border: 2px solid var(--couleur-secondaire);
-    padding: 15px;
-    border-radius: 8px;
-}
-#current-photo {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 4px;
-}
-#navigation button {
-    padding: 5px 15px;
-    font-size: 1.2em;
 }
